@@ -1,12 +1,9 @@
-const inputval = "#exmple || @name && user_email";
-// const inputval=$("#txt1").text();
-//
-// document.getElementById("bt").addEventListener("click", function(){
-//   document.getElementById("demo").innerHTML = "Check the console";
-// });
+function check(){
+  const inputval=document.getElementById("txt").value;
+
 let [...x]=inputval.split(" ");
 let outputval=[];
-console.log(x);
+//console.log(x);
 let y=x.map((a)=>{
   //console.log(a,b)
   if(a[0]=='#'){
@@ -30,3 +27,4 @@ let y=x.map((a)=>{
 });
 console.log(outputval);
 //console.log(text);
+}
